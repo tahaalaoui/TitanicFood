@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Titanic Food</title>
+    <link rel="stylesheet" href="StyleRES.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" href="icon-1.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <!-- font-family: 'Jura', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+    <!-- font-family: 'Caveat', cursive; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <!-- font-family: 'Orbitron', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+    <header class="header">
+        <div class="cover">
+
+
+            <nav class="nav">
+                <img class="logo" src="logo-1.png" alt="Titanic restaurant" width="120" height="100">
+
+
+                <ul class="navliste">
+                    <li><a href="webrestaurant.html">Home</a></li>
+                    <li><a href="foods.html">Menu</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <li><a href="#OpeningHours">Opening Hours</a></li>
+                    <li><a href="SignIn.html">Sign in</a></li>
+                    <li><a id="OrderNow" href="foods.html">Order Now</a></li>
+                    <!-- <li><a><i class="fas fa-search"></i></a></li> -->
+
+
+                </ul>
+            </nav>
+            <div class="welcome">
+                <h1>Try Your Delecieux Food</h1>
+                <h2>Live This Moment Now </h2>
+
+            </div>
+        </div>
+        </div>
+
+
+    </header>
+    <section class="plat">
+        <div class="content">
+            <div class="banner1">
+                <img src="hamburger.jpg" alt="hamburger">
+                <div class="text">
+                    <h1>Burger</h1>
+                    <P>Juicy, big, loaded with toppings of my choice." "High quality beef medium to well with cheese and bacon on a multigrain bun." "A huge single or triple burger with all the fixings, cheese, lettuce, tomato, onions and special sauce or
+                        mayonnaise!"
+                    </P>
+                </div>
+            </div>
+            <div class="banner1">
+                <img src="tacos.jpg" alt="tacos">
+                <div class="text">
+                    <h1>Tacos</h1>
+                    <p>Crispy Corn Shell (hard) Or 6' Flour Tortilla (soft )Filled With Lean Ground Beef Or Chicken,Colby Jack Cheese, Lettuce, And Choice Of Our Home-made Mild, Med, Or Hot Sauce. Deluxe Adds Sour Cream, Onion & Tomato. We Make Our Shells
+                        Fresh Daily!
+                    </p>
+                </div>
+            </div>
+            <div class="banner1">
+                <img src="mixed-ingredient-pizza-with-cheese-tomatoes.jpg" alt="mixed-ingredient-pizza-with-cheese-tomatoes">
+                <div class="text">
+                    <h1>Pizza</h1>
+                    <p>Margarita – A crispy stone-baked base is the foundation for velvety tomato sauce and melted mozzarella cheese, topped with sharp notes of basil leaf.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <script>
+                var indexValue = 0;
+
+                function slideShow() {
+                    setTimeout(slideShow, 5000);
+                    var x;
+                    const img = document.querySelectorAll(".banner1");
+                    for (x = 0; x < img.length; x++) {
+                        img[x].style.display = "none";
+                    }
+                    indexValue++;
+                    if (indexValue > img.length) {
+                        indexValue = 1
+                    }
+                    img[indexValue - 1].style.display = "block";
+                }
+                slideShow();
+            </script>
+        </div>
+
+    </section>
+    <section class="Menu">
+        <h1 id="textleft">Hamburger With French <br> Fries On The Table</h1>
+        <h1 id="textcenter">Classic Lasagna With <br> Bolognese Sauce</h1>
+        <h1 id="textright">Sandwich With Chopped <br> Meat Side Fries</h1>
+        <img class="leftimg" src="hamburger.jpg" alt="hamburger-with-french-fries-on-the-table">
+        <img class="center" src="classic-lasagna-with-bolognese-sauce.jpg" alt="classic lasagna with bolognese sauce">
+
+        <img class="rightimg" src="sandwich-with-chopped-meat-side-fries.jpg" alt="sandwich-with-chopped-meat-side-fries">
+        <button><a href="foods.html">see the menu</a></button>
+    </section>
+    <section class="learnmore">
+        <h1>Learn more about our philosophy and what differentiates us on our : </h1>
+        <a class="Aboutus" href="#AboutUs">About Us</a>
+    </section>
+
+
+    <section id="OpeningHours">
+
+        <img src="cover.jpg" style="background-attachment: fixed;">
+
+        <div class="textOL">
+
+
+            <h2 id="Restaurant">Restaurant</h2><br><br>
+            <p>
+                <span class="TextBold"> Monday to Friday </span><br><br> 11:30 am to 2:00 pm | 7:15 pm to 10:45 pm <br>
+                <br>
+                <span class="TextBold"> Saturdays</span> <br><br> 11:30 am to 2:30 pm | 7:15 pm to 10:45 pm <br>
+                <br>
+                <span class="TextBold"> Sundays</span> <br><br> 11:30 am to 2:30 pm
+            </p>
+        </div>
+        <h1 id="Opening">Opening Hours</h1>
+        <h2 id="Make"> Make Your reservation!</h2>
+        <span id="Reservation"><h3> Reservation: (00) 1234-56780 or (12) 3456-78910 </h3></span>
+        <div class="textOR">
+            <h2 id="Delivery">Delivery</h2><br><br>
+            <p>
+                <span class="TextBold"> Monday to Friday</span><br><br> 11:15 am to 1:45 pm | 7:15 pm to 10:30 pm <br><br>
+
+                <span class="TextBold"> Saturdays</span><br><br> 11:15 am to 1:45 pm | 7:15 pm to 10:30 pm<br><br>
+
+                <span class="TextBold"> Sundays</span><br><br> 11:15 am to 1:45 pm
+            </p>
+        </div>
+
+
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div style="text-align:center ; font-size: 20px;">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="row">
+                <div class="image">
+                    <img src="restanrant1.jpg" style="width:100%">
+                </div>
+                <div class="column">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                        <input id="submit" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+
+        <div id="googleMap">
+
+            <script>
+                function myMap() {
+                    var mapProp = {
+                        center: new google.maps.LatLng(33.95389, -6.89405),
+                        zoom: 13,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                }
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+        </div>
+        <img src="logo-1.png" alt="TitanicFood">
+        <div class="FollowF">
+            <h2> Follow us:</h2>
+            <ul>
+                <li><a href="#instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#twitter"><i class="fab fa-twitter"></i></a></li>
+                <li>
+                    <a href="#delivery"><img src="delivery-food.png" alt="delivery"></a>
+                </li>
+
+            </ul>
+            <p>Shop 6, Mahavir Apartments,<br> 241, Tardeo Road,<br> Next to Bharat Petroleum,<br> Tardeo, Mumbai – 400007 <br>
+            </p>
+            <span id="line"></span>
+        </div>
+        <div class="Quicklinks">
+            <ul>
+                <li><a href="webrestaurant.html">Home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#contact">contact us</a></li>
+                <li><a href="SignIn.html">sign in</a></li>
+            </ul>
+        </div>
+        <p>
+            © Titannic Food - All rights reserved | Developed by Taha Laalaoui
+        </p>
+    </section>
+
+
+</body>
+
+</html>

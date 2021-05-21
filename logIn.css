@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hamburger.jpg') center no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #373737;
+    background-size: cover;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100px;
+    color: white;
+    border-bottom: 1px solid rgb(255, 174, 0);
+}
+
+.nav h1 {
+    line-height: 100px;
+    margin-left: 30px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 60px;
+}
+
+form {
+    margin-top: 100px;
+    border: 3px solid #f1f1f1;
+}
+
+
+/* Full-width inputs */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'jura';
+}
+
+#SignUp {
+    background-color: #3ebe03;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'jura';
+    border: 2px solid #3ebe03;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    background-color: #3ebe03;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'jura';
+}
+
+
+/* Add a hover effect for buttons */
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* Extra style for the cancel button (red) */
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #da0f00;
+}
+
+
+/* Add padding to containers */
+
+.container {
+    padding: 16px;
+    color: white;
+}
+
+.container label b {
+    font-family: 'jura';
+}
+
+
+/* The "Forgot password" text */
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}

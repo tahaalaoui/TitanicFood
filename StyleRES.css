@@ -1,0 +1,515 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.cover {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hamburger.jpg') center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+}
+
+.nav {
+    width: 100%;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+.navliste {
+    float: right;
+    margin-right: 20px;
+    margin-top: 9px;
+    position: sticky;
+}
+
+.navliste li {
+    display: inline-block;
+    list-style: none;
+    margin: 23px 6px;
+    line-height: 20px;
+}
+
+.navliste li a {
+    margin: auto;
+    text-decoration: none;
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 0.753);
+    font-size: x-large;
+    font-family: 'Jura', sans-serif;
+    transition: .3s;
+    font-weight: 10px;
+}
+
+.nav ul li a.active,
+.nav ul li a:hover {
+    border-bottom: 3px solid rgb(255, 174, 0);
+    color: whitesmoke;
+    padding: 1px;
+}
+
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Jura', sans-serif;
+    user-select: none;
+}
+
+.welcome h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.welcome h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px
+}
+
+.buttons {
+    margin: 20px 200px;
+    font-family: 'Jura', sans-serif;
+}
+
+.buttons button {
+    color: white;
+    padding: 8px;
+    background: rgb(255, 174, 0);
+    border: 2px solid rgb(255, 174, 0);
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+    outline: none;
+    font-family: sans-serif;
+}
+
+.buttons button:active {
+    background: white;
+}
+
+.buttons button:hover {
+    background: rgba(255, 174, 0, 0.685);
+}
+
+.buttons .btn {
+    margin-left: 23px;
+}
+
+section {
+    padding: 0;
+    margin: 0;
+}
+
+.banner1 {
+    background-color: white;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner1 img {
+    width: 700px;
+    height: 500px;
+}
+
+.text {
+    border: 1px solid white;
+    width: 500px;
+    float: right;
+    bottom: 20px;
+    margin-top: 80px;
+    margin-right: 80px;
+}
+
+.text p {
+    color: black;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Jura', sans-serif;
+}
+
+.text h1 {
+    color: black;
+    font-size: 40px;
+    font-family: 'Jura', sans-serif;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.Menu button {
+    position: absolute;
+    top: 100em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(255, 174, 0);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+}
+
+.Menu button:hover {
+    background-color: rgba(255, 174, 0, 0.726);
+}
+
+#OrderNow {
+    background-color: rgb(255, 174, 0);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: black;
+    border: 1px solid rgb(255, 174, 0);
+    font-weight: bold;
+}
+
+#OrderNow:hover {
+    background-color: rgba(255, 174, 0, 0.685);
+}
+
+#googleMap {
+    height: 500px;
+}
+
+.leftimg {
+    width: 33%;
+}
+
+.center {
+    width: 33%;
+    height: 564px;
+}
+
+.rightimg {
+    width: 33.4%;
+    float: right;
+    height: 564px;
+}
+
+#textleft {
+    position: absolute;
+    top: 44em;
+    text-align: center;
+    margin-left: 60px;
+    font-size: 37px;
+    font-family: 'Caveat', cursive;
+    color: white;
+}
+
+#textright {
+    position: absolute;
+    top: 44em;
+    text-align: center;
+    right: 60px;
+    font-size: 37px;
+    font-family: 'Caveat', cursive;
+    color: white;
+}
+
+#textcenter {
+    position: absolute;
+    top: 44em;
+    left: 530px;
+    text-align: center;
+    font-size: 37px;
+    font-family: 'Caveat', cursive;
+    color: white;
+}
+
+.learnmore {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 80px;
+    margin-left: 44em;
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+}
+
+.Aboutus {
+    background-color: rgb(255, 174, 0);
+    border: 1px solid rgb(255, 174, 0);
+    color: white;
+    position: absolute;
+    right: 43%;
+    margin-top: 70px;
+    text-decoration: none;
+    padding: 8px 16px 8px 16px;
+    border-radius: 4px;
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.footer {
+    background-color: black;
+    height: 500px;
+}
+
+#googleMap {
+    width: 30%;
+    height: 300px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 100px;
+}
+
+.textOL {
+    position: absolute;
+    top: 114em;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    left: 120px;
+    font-family: 'Jura';
+}
+
+#OpeningHours {
+    margin-top: 20em;
+    ;
+    height: 700px;
+    width: 100%;
+    background-color: black;
+}
+
+#OpeningHours img {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    background-attachment: fixed;
+}
+
+#Opening {
+    text-align: center;
+    position: relative;
+    top: -10em;
+    font-size: 65px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#Make {
+    text-align: center;
+    position: relative;
+    top: -27em;
+    font-size: 23px;
+    color: rgb(255, 0, 0);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.TextBold {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+#Restaurant {
+    color: green;
+    font-family: 'Orbitron';
+    font-size: 35px;
+}
+
+.textOR {
+    position: absolute;
+    top: 114em;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    right: 120px;
+    font-family: 'Jura';
+}
+
+#Delivery {
+    color: red;
+    font-family: 'Orbitron';
+    font-size: 35px;
+}
+
+#Reservation {
+    text-align: center;
+    position: relative;
+    top: -20em;
+    font-size: 10px;
+    color: white;
+    font-family: 'jura', sans-serif;
+}
+
+.footer img {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin-left: 200px;
+}
+
+.FollowF {
+    color: whitesmoke;
+    font-family: 'Caveat';
+    font-size: 25px;
+}
+
+.FollowF ul,
+.FollowF p,
+.FollowF h2 {
+    margin-left: 35px;
+}
+
+.FollowF ul li {
+    margin-top: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.FollowF ul li a {
+    color: rgba(245, 245, 245, 0.795);
+    text-decoration: none;
+    margin: 5px;
+}
+
+.FollowF ul li a.active,
+.FollowF ul li a:hover {
+    color: white;
+}
+
+.FollowF ul li a img {
+    color: whitesmoke;
+    width: 28px;
+    height: 27px;
+    margin-left: -5px;
+}
+
+.FollowF {
+    border-bottom: 1px solid white;
+}
+
+.footer p {
+    margin-top: 15px;
+    color: white;
+    margin-left: 50px;
+}
+
+.Quicklinks {
+    text-align: center;
+    position: absolute;
+    top: 225em;
+    left: 45%;
+    color: white;
+    font-family: 'jura';
+}
+
+.Quicklinks ul li {
+    text-decoration: none;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.Quicklinks ul li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgb(255, 174, 0);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid rgb(255, 174, 0);
+    font-family: 'jura';
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(255, 174, 0, 0.616);
+}
+
+
+/* Style the container/contact section */
+
+.container {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('restaurant2.jpg') center no-repeat;
+    background-attachment: fixed;
+    padding: 10px;
+    font-family: 'jura';
+    color: whitesmoke;
+}
+
+.container div h2 {
+    font-size: 40px;
+    color: whitesmoke;
+    border: 1px solid rgb(255, 174, 0);
+    padding: 10px;
+}
+
+
+/* Create two columns that float next to eachother */
+
+.column {
+    float: left;
+    width: 40%;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.image {
+    float: right;
+    width: 50%;
+    margin-top: 100px;
+}
+
+.column form input,
+#country {
+    border-radius: 20px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.Menu button a {
+    text-decoration: none;
+    color: black;
+}

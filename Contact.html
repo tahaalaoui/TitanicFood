@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="icon-1.png" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="Register.css">
+    <link rel="stylesheet" href="StyleRES.css">
+    <!-- font-family: 'Jura', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+    <!-- font-family: 'Yanone Kaffeesatz', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <nav>
+                <h1> Contact Us </h1>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <form class="form" action="action_page.php">
+            <div class="container" style="margin-top: 90px;">
+                <div style="text-align:center ; font-size: 20px;">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="row">
+                    <div class="image">
+                        <img src="restanrant1.jpg" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <form action="/action_page.php">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                    </select>
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                            <input id="submit" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+
+
+
+
+
+</html>
